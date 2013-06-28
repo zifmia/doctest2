@@ -1,11 +1,18 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 
 group :development do
   gem 'sqlite3', '1.3.7'
 end
+
+group :development, :test do
+  gem 'rspec'
+end
+
+gem 'acts_as_tree'
+gem 'paperclip'
 
 gem 'sass-rails', '4.0.0'
 gem 'uglifier', '2.1.1'
@@ -20,5 +27,5 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg'
 end
